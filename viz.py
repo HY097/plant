@@ -125,19 +125,20 @@ def transition_map(t, sp, q, year, only=False):
     for key,(clr,lab) in STATUS.items():
         fig.add_trace(go.Scatter(x=[None],y=[None],mode='markers',
             marker=dict(color=clr,size=11,symbol='square'),name=lab))
-base(fig,620)
-fig.update_layout(
-    margin=dict(l=15,r=170,t=12,b=40),
-    legend=dict(
-        orientation='v',
-        x=1.02,
-        y=1,
-        xanchor='left',
-        yanchor='top',
-        font=dict(size=12),
-        bgcolor='rgba(252,252,248,0.95)'
+
+    base(fig,620)
+    fig.update_layout(
+        margin=dict(l=15,r=170,t=12,b=40),
+        legend=dict(
+            orientation='v',
+            x=1.02,
+            y=1,
+            xanchor='left',
+            yanchor='top',
+            font=dict(size=12),
+            bgcolor='rgba(252,252,248,0.95)'
+        )
     )
-)
     fig.update_xaxes(title='가로 위치 (cm)',range=[0,100],dtick=20,constrain='domain')
     fig.update_yaxes(title='세로 위치 (cm)',range=[0,100],dtick=20,scaleanchor='x',showgrid=False)
     return fig
