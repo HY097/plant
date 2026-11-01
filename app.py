@@ -28,7 +28,15 @@ st.markdown('''<style>
 .block-container{max-width:1100px;padding-top:1.4rem;padding-bottom:5.5rem}
 html,body,p,li,[data-testid="stMarkdownContainer"] {font-family:'DM Sans','Noto Sans KR',sans-serif!important}
 [data-testid="stMarkdownContainer"] p {font-size:1.045rem;line-height:1.88;color:#2C3831;margin:0 0 1.15rem;max-width:900px}
-[data-testid="stMarkdownContainer"] h1{font-size:clamp(2.4rem,5vw,4rem)!important;letter-spacing:-.065em!important;line-height:1.23!important;color:#193E30!important;font-weight:700!important;margin:1rem 0 1.2rem!important}
+[data-testid="stMarkdownContainer"] h1{
+    font-size:clamp(2.0rem,4.2vw,3.2rem)!important;
+    letter-spacing:-.035em!important;
+    line-height:1.32!important;
+    color:#193E30!important;
+    font-weight:700!important;
+    margin:0.7rem 0 1rem!important;
+    word-break:keep-all!important;
+}
 [data-testid="stMarkdownContainer"] h2{font-size:1.75rem!important;letter-spacing:-.045em!important;line-height:1.4!important;color:#254B38!important;margin:2.25rem 0 1rem!important}
 [data-testid="stMarkdownContainer"] h3{font-size:1.23rem!important;margin:1.35rem 0 .5rem!important;color:#263D31!important}
 [data-testid="stMarkdownContainer"] a{color:#2B6950;text-underline-offset:3px}
